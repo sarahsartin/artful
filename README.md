@@ -11,6 +11,6 @@
 ### Psql for debugging
 
 - Login
-  - psql -h 127.0.0.1 -U pg-user -d pi_frame_displayable
+  - psql -h 127.0.0.1 -U sarah -d artful
 - show all tables
   - \dt
