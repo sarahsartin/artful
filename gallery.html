@@ -9,7 +9,7 @@
 
   <meta property="og:title" content="Artful">
   <meta property="og:description" content="Where parents go to store kids' art.">
-  <meta property="og:image" content="../images/photos/ARt-Ful.png">
+  <meta property="og:image" content="images/photos/ARt-Ful.png">
   <meta property="og:url" content="">
   <meta property="og:site_name" content="Artful">
 
@@ -17,9 +17,9 @@
   <meta name="twitter:image:alt" content="Artful">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/photoswipe.css">
-  <link rel="stylesheet" href="../css/default-skin.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="css/photoswipe.css">
+  <link rel="stylesheet" href="css/default-skin.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200&display=swap" rel="stylesheet">
 
@@ -28,7 +28,7 @@
   
   <style type="text/css">
     .header-image {
-      background: #282f30 url("../images/photos/ARt-Ful.png");
+      background: #282f30 url("images/photos/ARt-Ful.png");
       background-position: center 30%;
       background-repeat: no-repeat;
       background-size: cover;
@@ -91,28 +91,26 @@
         <h2>
           <a name="section_0"></a>
           Gallery
-          <a href="#section_0">
-              <svg class="section-link-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-              </svg>
-          </a>
         </h2>
         <p></p>
     </div>
   </div>
 
-  <form id="uploader">
+  <div class="file-upload">
     <p>
-      <label for="photo">Upload a new photo:</label>
-        <input id="photo" name="myPhoto" type="file">
+        <input id="photo" class="file-upload__input" name="myPhoto[]" type="file" multiple>
     </p>
-    <button>Upload Now</button>
-  </form>
+    <button type="button" class="file-upload__button">Upload New</button>
+    <span class="file-upload__label"></span>
+  </div>
+
+  <br />
+    <p><a href="gallery-new.html"><button type="button" class="submit-button">Submit</button></a></p>
   
     <div class="row">
   <div class="col gallery">
     
-      <a href="../images/photos/lyd-1.jpg"
+      <a href="images/photos/lyd-1.jpg"
          class="gallery-photo"
          data-index="0"
          data-type="image"
@@ -121,9 +119,9 @@
          data-height="1536"
          data-date=""
          style="--w: 214; --h: 160">
-         <img src="../images/thumbnails/lyd-1.jpg" class="thumbnail rounded" alt=""/></a>
+         <img src="images/thumbnails/lyd-1.jpg" class="thumbnail rounded" alt=""/></a>
     
-      <a href="../images/photos/lyd-2.jpg"
+      <a href="images/photos/lyd-2.jpg"
          class="gallery-photo"
          data-index="1"
          data-type="image"
@@ -132,9 +130,9 @@
          data-height="1536"
          data-date=""
          style="--w: 214; --h: 160">
-         <img src="../images/thumbnails/lyd-2.jpg" class="thumbnail rounded" alt=""/></a>
+         <img src="images/thumbnails/lyd-2.jpg" class="thumbnail rounded" alt=""/></a>
     
-      <a href="../images/photos/lyd-3.jpg"
+      <a href="images/photos/lyd-3.jpg"
          class="gallery-photo"
          data-index="2"
          data-type="image"
@@ -143,9 +141,9 @@
          data-height="1536"
          data-date=""
          style="--w: 214; --h: 160">
-         <img src="../images/thumbnails/lyd-3.jpg" class="thumbnail rounded" alt=""/></a>
+         <img src="images/thumbnails/lyd-3.jpg" class="thumbnail rounded" alt=""/></a>
     
-      <a href="../images/photos/lyd-4.jpg"
+      <a href="images/photos/lyd-4.jpg"
          class="gallery-photo"
          data-index="3"
          data-type="image"
@@ -154,9 +152,9 @@
          data-height="1536"
          data-date=""
          style="--w: 214; --h: 160">
-         <img src="../images/thumbnails/lyd-4.jpg" class="thumbnail rounded" alt=""/></a>
+         <img src="images/thumbnails/lyd-4.jpg" class="thumbnail rounded" alt=""/></a>
     
-      <a href="../images/photos/lyd-5.jpg"
+      <a href="images/photos/lyd-5.jpg"
          class="gallery-photo"
          data-index="4"
          data-type="image"
@@ -165,9 +163,9 @@
          data-height="1536"
          data-date=""
          style="--w: 214; --h: 160">
-         <img src="../images/thumbnails/lyd-5.jpg" class="thumbnail rounded" alt=""/></a>
+         <img src="images/thumbnails/lyd-5.jpg" class="thumbnail rounded" alt=""/></a>
     
-      <a href="../images/photos/lyd-6.jpg"
+      <a href="images/photos/lyd-6.jpg"
          class="gallery-photo"
          data-index="5"
          data-type="image"
@@ -176,9 +174,9 @@
          data-height="200"
          data-date=""
          style="--w: 214; --h: 160">
-         <img src="../images/thumbnails/lyd-6.jpg" class="thumbnail rounded" alt=""/></a>
+         <img src="images/thumbnails/lyd-6.jpg" class="thumbnail rounded" alt=""/></a>
 
-      <a href="../images/photos/lyd-7.jpg"
+      <a href="images/photos/lyd-7.jpg"
          class="gallery-photo"
          data-index="6"
          data-type="image"
@@ -187,9 +185,9 @@
          data-height="200"
          data-date=""
          style="--w: 214; --h: 160">
-         <img src="../images/thumbnails/lyd-7.jpg" class="thumbnail rounded" alt=""/></a>
+         <img src="images/thumbnails/lyd-7.jpg" class="thumbnail rounded" alt=""/></a>
 
-      <a href="../images/photos/lyd-8.jpg"
+      <a href="images/photos/lyd-8.jpg"
          class="gallery-photo"
          data-index="7"
          data-type="image"
@@ -198,9 +196,9 @@
          data-height="200"
          data-date=""
          style="--w: 214; --h: 160">
-         <img src="../images/thumbnails/lyd-8.jpg" class="thumbnail rounded" alt=""/></a>
+         <img src="images/thumbnails/lyd-8.jpg" class="thumbnail rounded" alt=""/></a>
 
-      <a href="../images/photos/lyd-9.jpg"
+      <a href="images/photos/lyd-9.jpg"
          class="gallery-photo"
          data-index="8"
          data-type="image"
@@ -209,9 +207,9 @@
          data-height="200"
          data-date=""
          style="--w: 214; --h: 160">
-         <img src="../images/thumbnails/lyd-9.jpg" class="thumbnail rounded" alt=""/></a>
+         <img src="images/thumbnails/lyd-9.jpg" class="thumbnail rounded" alt=""/></a>
 
-      <a href="../images/photos/lyd-10.jpg"
+      <a href="images/photos/lyd-10.jpg"
          class="gallery-photo"
          data-index="9"
          data-type="image"
@@ -220,7 +218,7 @@
          data-height="200"
          data-date=""
          style="--w: 214; --h: 160">
-         <img src="../images/thumbnails/lyd-10.jpg" class="thumbnail rounded" alt=""/></a>
+         <img src="images/thumbnails/lyd-10.jpg" class="thumbnail rounded" alt=""/></a>
     
   </div>
 </div>
@@ -278,10 +276,38 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="../js/photoswipe.min.js"></script>
-  <script src="../js/photoswipe-ui-default.min.js"></script>
-  <script src="../js/main.js"></script>
-  <script src="../js/uploader.js"></script>
+  <script src="js/photoswipe.min.js"></script>
+  <script src="js/photoswipe-ui-default.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/uploader.js"></script>
+
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.file-upload__button'), function (button) {
+      const hiddenInput = button.parentElement.querySelector('.file-upload__input');
+      const label = button.parentElement.querySelector('.file-upload__label');
+      const defaultLabelText = 'No file(s) selected';
+
+      // set default text for label
+      label.textContent = defaultLabelText;
+      label.title = defaultLabelText;
+
+      // add click
+      button.addEventListener('click', function () {
+        hiddenInput.click();
+      });
+
+      // show when a file has been chosen
+      hiddenInput.addEventListener('change', function () {
+        const filenameList = Array.prototype.map.call(hiddenInput.files, function (file) {
+          return file.name; 
+        }); 
+
+      // display file names, else show that no files were selected
+      label.textContent = filenameList.join(', ') || defaultLabelText;
+      label.title = label.textContent;
+      });
+    });
+  </script>
 </body>
 
 </html>

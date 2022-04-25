@@ -30,6 +30,52 @@ body {
   width: 100%;
 }
 
+.file-upload{
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 2em;
+}
+
+.file-upload__input {
+  display: none;
+}
+
+.file-upload__label {
+  max-width: 250px;
+  font-size: 0.95em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.submit-button {
+  align-items: center;
+  background-color: #0056b3;
+  border: 1px solid;
+  -webkit-appearance: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.file-upload__button {
+  -webkit-appearance:none;
+  background: #33298d;
+  border: 2px solid #2e3a3a;
+  padding: 0.5em 0.8em;
+  outline: none;
+  margin-right: 15px;
+  color: #fff;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.file-upload__button:active {
+  background: #1e1857;
+}
+
 .header-image {
   height: 400px;
   color: #eeeeee;
